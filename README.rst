@@ -9,9 +9,9 @@ it automatically running in a robust way under `nginx` and `uwsgi`.
 Quickstart
 ----------
 
-Build with `docker build -t guac .`
+Build with ``docker build -t guac .``
 
-Run with `docker run -it -p 8888:80 guac`
+Run with ``docker run -it -p 8888:80 guac``
 
 Contributors
 ============

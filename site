@@ -1,0 +1,9 @@
+server {
+        listen 80;
+        server_name localhost;
+        location / { try_files $uri @our_site; }
+        location @our_site {
+            include uwsgi_params;
+            uwsgi_pass 127.0.0.1:8080;
+        }
+}
